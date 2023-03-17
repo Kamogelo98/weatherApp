@@ -6,11 +6,6 @@ p {
     text-align: center;
 }
 
-a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
 span {
     font-size: 20px;
 }
