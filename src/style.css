@@ -6,6 +6,17 @@ p {
     text-align: center;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+    
+}
+
 span {
     font-size: 20px;
 }
