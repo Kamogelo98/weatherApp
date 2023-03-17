@@ -1,0 +1,156 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+span {
+    font-size: 20px;
+}
+
+form {
+    margin-left: 21px;
+}
+
+input {
+
+    width: 46%;
+    border: solid 2px white;
+    border-radius: 5px;
+
+}
+
+input:hover {
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+}
+
+button {
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+button:hover {
+
+    border: solid 2px black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px aqua;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.icon {
+    border-radius: 5px;
+}
+
+.current-city {
+    border-radius: 5px;
+
+}
+
+.search-container {
+
+    display: block;
+    border: solid 2px white;
+    width: 50%;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-image: url(../images/bakkk.jpg);
+    font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+}
+
+
+.current-temp {
+    border-radius: 5px;
+    display: block;
+    border: solid 2px white;
+    margin: 30px;
+    padding: 30px;
+    text-align: right;
+}
+
+.current-temp:hover {
+
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+
+}
+
+.next-temp {
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: left
+}
+
+.thu {
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
+.thu:hover {
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+}
+
+.fri {
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
+.fri:hover {
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+}
+
+
+.sat {
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
+.sat:hover {
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+}
+
+
+.sun {
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
+.sun:hover {
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+}
+
+
+.mon {
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
+.mon:hover {
+    border-radius: 5px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px aqua;
+}
