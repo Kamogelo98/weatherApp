@@ -5,10 +5,12 @@ h4,
 p {
     text-align: center;
 }
-
+ul{
+    text-align: center;
+}
 ul#temperature li{
     display: inline;
-    text-align: center;
+  
     
 }
 
