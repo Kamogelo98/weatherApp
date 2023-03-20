@@ -115,6 +115,7 @@ footer {
 .thu {
     border-radius: 5px;
     border: solid 2px white;
+    background-color: rgb(209, 206, 206, 0.6);
 }
 
 .thu:hover {
@@ -126,6 +127,7 @@ footer {
 .fri {
     border-radius: 5px;
     border: solid 2px white;
+    background-color: rgb(209, 206, 206, 0.6);
 }
 
 .fri:hover {
@@ -138,6 +140,7 @@ footer {
 .sat {
     border-radius: 5px;
     border: solid 2px white;
+    background-color: rgb(209, 206, 206, 0.6);
 }
 
 .sat:hover {
@@ -150,6 +153,7 @@ footer {
 .sun {
     border-radius: 5px;
     border: solid 2px white;
+    background-color: rgb(209, 206, 206, 0.6);
 }
 
 .sun:hover {
@@ -162,6 +166,7 @@ footer {
 .mon {
     border-radius: 5px;
     border: solid 2px white;
+    background-color: rgb(209, 206, 206, 0.6);
 }
 
 .mon:hover {
