@@ -8,12 +8,13 @@ p {
 
 ul#temperature li{
     display: inline;
+    text-align: center;
     
 }
 
 li{
     list-style: none;
-    text-align: center;
+   
 }
 a {
     color: black;
