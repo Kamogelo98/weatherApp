@@ -6,12 +6,14 @@ p {
     text-align: center;
 }
 
-ul{
+ul#temperature li{
     display: inline;
+    
 }
 
 li{
     list-style: none;
+    text-align: center;
 }
 a {
     color: black;
