@@ -87,9 +87,9 @@ function currentCityWeather(response) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = currentCity;
 
-  let temperature = Math.round(response.data.main.temp);
-  let h3 = document.querySelector("h3");
-  h3.innerHTML = `${temperature} °C`;
+  let temperature = document.querySelector("#temperature");
+ temperature.innerHTML= Math.round(response.data.main.temp);
+  
 
 
   let descriptionElement = document.querySelector("#description");
@@ -134,10 +134,8 @@ currentCityBtn.addEventListener("click", currentCity);
 
 function searchedCityTemperature(response) {
 
-  let temperature = Math.round(response.data.main.temp);
-  
-  let h3 = document.querySelector("#temperature");
-  h3.innerHTML = `${temperature}°C`;
+ let temperature = document.querySelector("#temperature");
+ temperature.innerHTML= Math.round(response.data.main.temp);
   
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
@@ -185,6 +183,9 @@ function displayFahrenheitTemp(event){
   event.preventDefault();
   
   let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9)/5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 
@@ -194,6 +195,9 @@ function displayFahrenheitTemp(event){
 function displayCelsiusTemp(event){
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
 }
