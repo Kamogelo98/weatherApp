@@ -77,6 +77,10 @@ function currentCityWeather(response) {
   let h3 = document.querySelector("h3");
   h3.innerHTML = `${temperature} °C`;
 
+
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+
 }
 
 
