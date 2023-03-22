@@ -105,7 +105,7 @@ function currentCityWeather(response) {
 
 
   dateElement = document.querySelector("#date");
-  descriptionElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
 }
 
@@ -148,6 +148,10 @@ function searchedCityTemperature(response) {
 
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)}km/h`;
+
+   dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt*1000);
+
 
 }
 
