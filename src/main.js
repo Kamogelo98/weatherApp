@@ -69,6 +69,8 @@ function currentCityCoordinates(position) {
 
 function currentCityWeather(response) {
 
+  console.log(response.data);
+
   let currentCity = response.data.name;
   let h1 = document.querySelector("h1");
   h1.innerHTML = currentCity;
