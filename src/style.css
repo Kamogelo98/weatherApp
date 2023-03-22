@@ -32,7 +32,7 @@ form {
 input {
 
     width: 46%;
-    border: solid 2px black;
+    border: solid 2px white;
     border-radius: 5px;
 
 }
@@ -44,7 +44,7 @@ input:hover {
 
 button {
     border-radius: 5px;
-    border: solid 2px black;
+    border: solid 2px white;
     
 }
 
@@ -91,7 +91,7 @@ footer {
 .search-container {
 
     display: block;
-    border: solid 2px black;
+    border: solid 2px white;
     width: 50%;
     padding: 30px;
     margin: 30px auto;
