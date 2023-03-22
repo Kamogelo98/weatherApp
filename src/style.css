@@ -64,6 +64,10 @@ footer {
     font-weight: bold;
 }
 
+#description{
+    text-transform:capitalize ;
+}
+
 .icon {
     border-radius: 5px;
 }
