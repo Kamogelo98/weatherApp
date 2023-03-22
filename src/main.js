@@ -36,18 +36,30 @@
 
 //   }
 
-let currentDate = new Date();
 
+
+
+
+function formatDate(timestamp){
+
+  
+let currentDate = new Date(timestamp);
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let day = days[currentDate.getDay()];
 
 let timeHrs = currentDate.getHours();
+
+if(timeHrs < 10){
+  timeHrs = `0${timeHrs}`;
+}
 let timeMin = currentDate.getMinutes();
 
-let h2 = document.querySelector("h2");
+if(timeMin < 10){
+  timeMin = `0${timeMin}`;
+}
 
-h2.innerHTML = `${day} ${timeHrs}:${timeMin}`;
-
+return  `${day} ${timeHrs}:${timeMin}`;;
+}
 
 
 
@@ -90,6 +102,10 @@ function currentCityWeather(response) {
 
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)}km/h`;
+
+
+  dateElement = document.querySelector("#date");
+  descriptionElement.innerHTML = formatDate(response.data.dt * 1000);
 
 }
 
