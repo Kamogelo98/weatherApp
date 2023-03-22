@@ -67,7 +67,9 @@ footer {
 #description{
     text-transform:capitalize ;
 }
-
+#humidity{
+    padding-left: 10px;
+}
 .icon {
     border-radius: 5px;
 }
