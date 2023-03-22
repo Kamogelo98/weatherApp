@@ -65,13 +65,13 @@ footer {
 #humidity{
     padding-left: 10px;
 }
-.anchor-style{
+/* .anchor-style{
    
             color: rgb(33, 33, 33);
             text-decoration: none;
             cursor: pointer;
 
-}
+} */
 
 .active{
 
@@ -80,6 +80,7 @@ footer {
 }
 
 .active:hover{
+    
     text-decoration: none;
 }
 .current-city {
