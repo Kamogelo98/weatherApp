@@ -38,7 +38,7 @@
 
 let currentDate = new Date();
 
-let days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let day = days[currentDate.getDay()];
 
 let timeHrs = currentDate.getHours();
