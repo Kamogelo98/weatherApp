@@ -1,6 +1,3 @@
-body{
-    color: white;
-}
 h1,
 h2,
 h3,
@@ -105,6 +102,7 @@ footer {
 
 
 .current-temp {
+    color: white;
     border-radius: 5px;
     display: block;
     border: solid 2px white;
@@ -144,6 +142,7 @@ footer {
 }
 
 .fri {
+    color: white;
     border-radius: 5px;
     border: solid 2px white;
     background-color: rgb(209, 206, 206, 0.6);
@@ -157,6 +156,7 @@ footer {
 
 
 .sat {
+    color: white;
     border-radius: 5px;
     border: solid 2px white;
     background-color: rgb(209, 206, 206, 0.6);
@@ -170,6 +170,7 @@ footer {
 
 
 .sun {
+    color: white;
     border-radius: 5px;
     border: solid 2px white;
     background-color: rgb(209, 206, 206, 0.6);
@@ -183,6 +184,7 @@ footer {
 
 
 .mon {
+    color: white;
     border-radius: 5px;
     border: solid 2px white;
     background-color: rgb(209, 206, 206, 0.6);
