@@ -109,6 +109,12 @@ function searchedCityTemperature(response) {
   
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
+
+
+  
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+
 }
 
 function searchedTempCity(event) {
