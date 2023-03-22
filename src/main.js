@@ -104,7 +104,7 @@ function currentCityWeather(response) {
   windSpeedElement.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)}km/h`;
 
 
-  dateElement = document.querySelector("#date");
+  dateElement = document.querySelector("h2");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
 }
@@ -149,7 +149,7 @@ function searchedCityTemperature(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)}km/h`;
 
-   dateElement = document.querySelector("#date");
+   dateElement = document.querySelector("h2");
   dateElement.innerHTML = formatDate(response.data.dt*1000);
 
 
