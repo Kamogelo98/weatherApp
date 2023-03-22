@@ -84,13 +84,13 @@ function currentCityWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
 
 
-
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = response.data.main.humidity;
+  humidityElement.innerHTML = `${response.data.main.humidity} %`;
 
 
   let windSpeedElement = document.querySelector("#wind-speed");
-  windSpeedElement.innerHTML = Math.round(response.data.wind.speed);
+  windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
+
 }
 
 
@@ -126,11 +126,11 @@ function searchedCityTemperature(response) {
 
 
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = response.data.main.humidity;
+  humidityElement.innerHTML = `${response.data.main.humidity} %`;
 
 
   let windSpeedElement = document.querySelector("#wind-speed");
-  windSpeedElement.innerHTML = Math.round(response.data.wind.speed);
+  windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
 
 }
 
