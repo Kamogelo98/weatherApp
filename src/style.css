@@ -2,6 +2,7 @@
 body {
 
     background-image: url(../images/bakkk.jpg);
+    background-repeat: no-repeat;
 
 }
 
@@ -47,10 +48,7 @@ input:hover {
 
 
 
-.weather-app-wrapper {
-  max-width: 800px;
-  margin: 30px auto;
-}
+
 
 /* .weather-app {
   padding: 20px;
