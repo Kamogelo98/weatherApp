@@ -4,130 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Document</title>
+    <title>Weather Application</title>
   </head>
   <body>
-    <div class="container search-container">
-      <br />
-      <form id="search-form">
-        <input
-          id="input-search"
-          type="text"
-          placeholder="Search a City .."
-          name="search"
-        />
-        <button id="search-button" type="submit">
-          <i class="fa fa-search"></i>
-        </button>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="Search"
+                  placeholder="Enter a City..."
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                  id="searching"
+                />
+              </div>
+            </div>
+          </form>
+          <br />
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>
+                <span><div id="date"></div></span>
+              </li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                  alt=""
+                  id="icon"
+                />
+                <div>
+                  <strong id="temperature"></strong
+                  ><span class="units">
+                    <strong id="temperature"></strong>
+                    <span class="units"><span>°C</span> </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"> </span>km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thur</div>
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                  alt=""
+                  width="36"
+                />
+                <div class="weather-forecast-temperature"></div>
+                <span class="weather-forecast-temperature-max">18°</span>
+                <span class="weather-forecast-temperature-min">12°</span>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
 
-        <button id="current-city">Curent City</button>
-      </form>
-      <br />
-      <div class="row">
-        <div class="col current-temp">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h1>Pretoria</h1>
-          <br />
-          <h2 id="date">Wed 16:00</h2>
-          <br />
-          <h3>
-            <strong id="temperature"></strong
-            ><a href="#" id="celsius-link" class="active anchor-style">°C</a>
-            |<a href="#" id="fahrenheit-link" class="anchor-style">°F</a>
-          </h3>
-          <br />
-          <h4>
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAUhJREFUeNrt230NgzAQh2GkIAUJyJgMJCABCZNQKcxBHdyOpFkyEkYGV9oL75Lff2Rwz8pXe2tEpLlzGgAAAAAAAAAAYHsDg4+8Hp1m0ATNrJGNzGmbZdvOZN+lAFLRkyb+KHgvMX1H5wYgFR5OFL2VcATiMgA9uFbzzFD4Oss+2qoA9ID6k0P9yKnRVwGgBzJeWPg6Y1GAdIGSwpmKAFRS/C5CFoDCw/6v08EcIF3wpNL0WQHSrS5WDBDXt0hrgGfFxX+eE7IApCc8cZIuB0BwBBBMAZz9+l+jwApgcggwWQJEhwDRBMDp8P+cBhYAg2OAwQIgOAYIFgCzY4DZAkBcB4C7AywvcIwAAADgNsiDEI/CvAzxOsyECFNiTIoyLc7CCEtjLI6yPE6DBC0yNEnRJkejJK2yNEvTLs8fJgAAAAAAAADg1nkDlR7XfJiH1ggAAAAASUVORK5CYII="
-              alt="Sunny"
-              id="icon"
-            />
-          </h4>
-          <br />
-          <h4 id="description">Sunny</h4>
-          <br />
-          <ul id="temperature">
-            <li id="humidity">Humidity: 73%</li>
-            <li id="wind-speed">Wind Speed: 3km/h</li>
-          </ul>
-        </div>
-        <div class="col">
-          <div class="thu">
-            <br />
-            <p>
-              Thu<br />
-              <img src="./images/clouds.svg" alt="cloudy" /><br />
-              10 °C
-              <br />
-            </p>
-          </div>
-          <br />
-          <div class="fri">
-            <br />
-            <p>
-              Fri<br />
-              <img src="./images/rain.svg" alt="rain" /><br />
-              9 °C<br />
-            </p>
-          </div>
-          <br />
-          <div class="sat">
-            <br />
-            <p>
-              Sat<br />
-              <img src="./images/rain.svg" alt="rain" /><br />
-              9 °C<br />
-            </p>
-          </div>
-          <br />
-          <div class="sun">
-            <br />
-            <p>
-              Sun<br />
-              <img src="./images/clouds.svg" alt="cloudy" /><br />
-              8 °C<br />
-            </p>
-          </div>
-          <br />
-          <div class="mon">
-            <br />
-            <p>
-              Mon<br />
-              <img src="./images/sun.svg" alt="Sunny" /><br />
-              12 °C<br />
-            </p>
-          </div>
-          <br />
-        </div>
+        <small>
+          <a
+            href="https://github.com/Kamogelo98/weatherApp"
+            target="_blank"
+            class="anchor-style"
+            >Open Source Code
+          </a>
+          by Kamogelo Mashike
+        </small>
       </div>
-
-      <footer>
-        <a
-          href="https://github.com/Kamogelo98/weatherApp"
-          target="_blank"
-          class="anchor-style"
-          >Open Source Code
-        </a>
-        by Kamogelo Mashike
-      </footer>
     </div>
-
     <script src="src/main.js"></script>
   </body>
 </html>
