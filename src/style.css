@@ -45,6 +45,21 @@ input:hover {
     box-shadow: 5px 5px 10px aqua;
 }
 
+
+
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* .weather-app {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 7px;
+  background: linear-gradient(-20deg, #ffcab0 0%, rgb(251, 252, 219) 100%);
+} */
+
+
 .weather-app {
     max-width: 600px;
     margin: 0 Auto;
